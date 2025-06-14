@@ -14,9 +14,8 @@ The Active Directory Lab project aimed to
 
 ### Tools Used
 
-
-- Security Information and Event Management (SIEM) system for log ingestion and analysis.
-- Network analysis tools (such as Wireshark) for capturing and examining network traffic.
+- Splunk for log ingestion from and analyzing traffic.
+- .
 - Telemetry generation tools to create realistic network traffic and attack scenarios.
 
 ## Steps
@@ -29,3 +28,11 @@ Example below.
 *Ref 1: Network Diagram*
 
 ## Issues that I faced
+
+## Network Diagram
+![Network Diagram](https://github.com/user-attachments/assets/95e28155-af10-4f50-8368-ea217f1e4e09)
+
+
+## Notes
+[notes.docx](https://github.com/user-attachments/files/20738369/notes.docx)
+
