@@ -1,7 +1,6 @@
 # Active Directory Lab
 
 ## Objective
-[Brief Objective - Remove this afterwards]
 
 The Active Directory Lab project aimed to
 
@@ -28,3 +27,5 @@ Every screenshot should have some text explaining what the screenshot is about.
 Example below.
 
 *Ref 1: Network Diagram*
+
+## Issues that I faced
