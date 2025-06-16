@@ -46,19 +46,33 @@ My next objective was to download the tools I needed on each of my machines.
 
 To download Splunk on my Ubuntu server, I first downloaded Splunk on my host machine.
 
+![ss4](https://github.com/user-attachments/assets/ef1b60c8-5a4e-4b5f-82ba-825ae38ecfa7)
+
 I then installed virtual box additional guest add ons on the Ubuntu server.
+
+![ss5](https://github.com/user-attachments/assets/67510b07-9615-4ca7-abbd-8248dd284a3f)
 
 I then created a shared folder on Virtulbox which contains the Ubuntu download file.
 
 I then added the user to the vboxsf group.
 
+![ss6](https://github.com/user-attachments/assets/82e7dbcb-0c71-4958-944c-2cb85fc90e84)
+
 I then created a directory called share.
+
+![ss7](https://github.com/user-attachments/assets/563a9ce5-675d-4ca6-8bd8-0b0c322fbfad)
 
 I then mounted the shared folder to my newly created share directory.
 
+![ss8](https://github.com/user-attachments/assets/c71e8701-83af-403b-8f56-b82973e95ea9)
+
 I then changed into the user called splunk and then changed into a directory called bin so I can install Splunk on to my VM.
 
+![ss9](https://github.com/user-attachments/assets/8cbd11b7-c9e9-410f-83a8-4e57cefe1571)
+
 I then enabled the user to Splunk as the user Splunk every time the machine boots
+
+![ss10](https://github.com/user-attachments/assets/3557819e-db77-494b-ba25-58263bddba46)
 
 I then moved over to the my Windows Machine.
 
@@ -80,19 +94,30 @@ In Splunk, when I click on hosts, I can see my two Windows Machines.
 
 I then moved over to Windows Server machine where I installed Active Directory.
 
+![ss2](https://github.com/user-attachments/assets/cc8bcde0-f9f2-4f32-b540-84229e0cae61)
+
 I then promoted my server to a Domain Controller called tommy.local.
 
 I then explored Active Directory and learned how to create users, groups and OU's (organizational units).
 
 I created thee OUs and named them after different departments in a company to simulate a real world scenario: IT, Sales, and Marketing.
 
+![ss3](https://github.com/user-attachments/assets/170d80b0-ebec-434e-b86d-45a5f403178b)
+
+
 I created a user and a group for each OU
 
 I then added each user to their own respective groups.
 
+![ss4](https://github.com/user-attachments/assets/2506731e-38c9-48b0-97e0-7a5cc382f52e)
+
+![ss5](https://github.com/user-attachments/assets/9f8d2e1b-61c4-4d9b-add1-24af1f86f088)
+
 I then moved on to the Windows 10 Machine to log in as one of the users I created.
 
 I then logged into the user Billy Bob, with the username and password I created for this user.
+
+![ss6](https://github.com/user-attachments/assets/1b9937eb-d744-4c9a-b4b3-8bb394418ea7)
 
 Now that I had Active Directory set up, I can move over to my Kali Linux machine to perform a brute force attack.
 
