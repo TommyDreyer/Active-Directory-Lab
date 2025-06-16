@@ -24,11 +24,17 @@ The goal of this project is to create a virtual lab environment that has a Ubunt
 
 ## Steps
 
-The first step was to create the virtual machines I would be using in this lab. I already had Virtual Box on my host machine so I downloaded the iso files I needed. 
+The first step was to create the virtual machines I would be using in this lab. I already had Virtual Box on my host machine so I downloaded the iso files I needed.
+
+![2](https://github.com/user-attachments/assets/f3b62e59-67d6-4f1e-8c4a-a0b60bc87b91)
 
 For this lab, I created a Windows Server 2022 Machine, an Ubunbtu server, a Windows 10 Machine (which the target machine), and Kali Linux (which is the attacker machine).
 
+![1](https://github.com/user-attachments/assets/f475eae6-0c96-41d0-9237-6c8dacb50c4b)
+
 Once I had all my virtual machines up and running, I created a NAT network called AD Project in Virtual Box and put all my machines on it so they can all communicate and talk to each other. 
+
+![3](https://github.com/user-attachments/assets/f8c1c4df-ff47-4b69-baa2-ae47fdec59bb)
 
 Once all my machines were on the same network, I gave each machine its own static IP address.
 
@@ -104,21 +110,44 @@ I then peformed my brute force attack.
 
 And it was successful.
 
+![ss7](https://github.com/user-attachments/assets/f9c8426b-b105-42e7-850e-2d718fb826eb)
+
 I then moved over to Splunk to see what telemetry was generarated.
 
 When I was in Splunk, I saw there was 20 failed password attempts.
 
+![ss8](https://github.com/user-attachments/assets/5392f028-ff0b-4ac4-a93d-2dbd8961bcf8)
+
+![ss9](https://github.com/user-attachments/assets/1cdc5b76-fb29-4ec2-9953-f579c1abf52b)
+
 As well as one successful login attempt, which is congruent with my passwords file.
+
+![ss10](https://github.com/user-attachments/assets/666eed61-d454-4146-836a-68f2dc483838)
 
 I then installed Atomic Red team to see what other kinds of telemetry I could generate.
 
+![ss11](https://github.com/user-attachments/assets/928c9f81-333a-433f-a008-78edf381c1b2)
+
 But before that, I set an exclusion for the entire C drive on my Windows 10 machine so Windows Defender doesn't remove any of the files from Atomic Read team.
+
+![ss12](https://github.com/user-attachments/assets/095541a4-2efa-4f9e-968f-9a2e6183d8fe)
 
 I then installed Atomic Red Team on my target machine.
 
-I then learned that each of atomics in Atomic Team match the MITRE ATT&CK framework.
+![ss13](https://github.com/user-attachments/assets/ecab9348-1fd8-436e-99fe-8bf64003f45c)
 
-I then tested a few of the atomics and see what and then checked Splunk to see what came up.
+
+I then learned that each of atomics in Atomic Red Team match the MITRE ATT&CK framework.
+
+![ss15](https://github.com/user-attachments/assets/3a306ac8-7d76-4bbc-91b8-d538e5560dc9)
+
+I then tested a few of the atomics in Powershell and then I checked Splunk to see what came up.
+
+![ss16](https://github.com/user-attachments/assets/87dddfa5-2422-401e-af62-271f3636a3d2)
+
+
+![ss17](https://github.com/user-attachments/assets/2aad6042-5327-4a4d-a598-41c997276e08)
+
 
 ## Conclusion
 
