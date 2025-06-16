@@ -40,7 +40,7 @@ Once all my machines were on the same network, I gave each machine its own stati
 
 To verify the changes that have been made, I ran the ip a command and the ifconfig command on Windows and Kali respectively.
 
-I also ping google and my other machines to test connectivity
+I also pinged google and my other machines to test connectivity.
 
 My next objective was to download the tools I needed on each of my machines.
 
@@ -86,7 +86,7 @@ I then stopped and restarted Splunk in the Service Manager.
 
 I repeated these step in my Windows Server machine as well.
 
-I then logged into Splunk and created an index called endpoint (which matched what is written in the inputs.conf file I configured earlier)
+I then logged into Splunk and created an index called endpoint (which matched what is written in the inputs.conf file I configured earlier).
 
 I then configured Splunk to read the data recieved my from Windows Machines.
 
@@ -104,8 +104,7 @@ I created thee OUs and named them after different departments in a company to si
 
 ![ss3](https://github.com/user-attachments/assets/170d80b0-ebec-434e-b86d-45a5f403178b)
 
-
-I created a user and a group for each OU
+I created a user and a group for each OU.
 
 I then added each user to their own respective groups.
 
