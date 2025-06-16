@@ -54,6 +54,8 @@ I then installed virtual box additional guest add ons on the Ubuntu server.
 
 I then created a shared folder on Virtulbox which contains the Ubuntu download file.
 
+![ss3](https://github.com/user-attachments/assets/3fbcfab1-e984-4276-a378-4a65c0da44ea)
+
 I then added the user to the vboxsf group.
 
 ![ss6](https://github.com/user-attachments/assets/82e7dbcb-0c71-4958-944c-2cb85fc90e84)
