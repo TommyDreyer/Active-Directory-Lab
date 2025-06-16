@@ -54,15 +54,73 @@ I then changed into the user called splunk and then changed into a directory cal
 
 I then enabled the user to Splunk as the user Splunk every time the machine boots
 
-I then moved over to the my Windows
+I then moved over to the my Windows Machine.
 
+The first tool I installed was Splunk Universal Forwarder.
 
+I then installed Sysmon.
 
+After Sysmon was downloaded, I configured a file called inputs.conf to allow Splunk Universal Forwarder to forward Windows logs to my Ubuntu server.
 
+I then stopped and restarted Splunk in the Service Manager.
 
+I repeated these step in my Windows Server machine as well.
 
+I then logged into Splunk and created an index called endpoint (which matched what is written in the inputs.conf file I configured earlier)
 
+I then configured Splunk to read the data recieved my from Windows Machines.
 
+In Splunk, when I click on hosts, I can see my two Windows Machines.
+
+I then moved over to Windows Server machine where I installed Active Directory.
+
+I then promoted my server to a Domain Controller called tommy.local.
+
+I then explored Active Directory and learned how to create users, groups and OU's (organizational units).
+
+I created thee OUs and named them after different departments in a company to simulate a real world scenario: IT, Sales, and Marketing.
+
+I created a user and a group for each OU
+
+I then added each user to their own respective groups.
+
+I then moved on to the Windows 10 Machine to log in as one of the users I created.
+
+I then logged into the user Billy Bob, with the username and password I created for this user.
+
+Now that I had Active Directory set up, I can move over to my Kali Linux machine to perform a brute force attack.
+
+I did plan on using a tool Crowbar, but I was not able to configure it correctly, so instead I used tool called Hydra.
+
+Before I performed the attack, I unzipped a file called rockyou.txt that containes a list of passwords that can be used for a brute force attack.
+
+However, it was long file and i didn't wanna use all of it, so I used the head command to condensed it to 20 lines.
+
+I then edited the file, and added the passwords of the users I created, so the brute force attack could be performed correctly.
+
+I then copied the password file to a directory I called AD Project. 
+
+I then peformed my brute force attack. 
+
+And it was successful.
+
+I then moved over to Splunk to see what telemetry was generarated.
+
+When I was in Splunk, I saw there was 20 failed password attempts.
+
+As well as one successful login attempt, which is congruent with my passwords file.
+
+I then installed Atomic Red team to see what other kinds of telemetry I could generate.
+
+But before that, I set an exclusion for the entire C drive on my Windows 10 machine so Windows Defender doesn't remove any of the files from Atomic Read team.
+
+I then installed Atomic Red Team on my target machine.
+
+I then learned that each of atomics in Atomic Team match the MITRE ATT&CK framework.
+
+I then tested a few of the atomics and see what and then checked Splunk to see what came up.
+
+## Conclusion
 
 ## Issues that I faced
 
