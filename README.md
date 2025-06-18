@@ -156,6 +156,10 @@ I then logged into the user Billy Bob, with the username and password I created 
 
 ![ss6](https://github.com/user-attachments/assets/1b9937eb-d744-4c9a-b4b3-8bb394418ea7)
 
+I also enable rdp (remote desktop protocol) on my Windows Machine, so the brute force attack could work.
+
+![ss20](https://github.com/user-attachments/assets/58c6ec0a-03c2-4917-8c3f-bb5bd382d290)
+
 Now that I had Active Directory set up, I can move over to my Kali Linux machine to perform a brute force attack.
 
 My first step whas to update and upgrade repositories.
@@ -232,11 +236,6 @@ After looking through Splunk, I found that a new user called NewLocalUser was cr
 
 ![ss17](https://github.com/user-attachments/assets/2aad6042-5327-4a4d-a598-41c997276e08)
 
-
-## Conclusion
-
-Overall, I had a lot fun with this lab. I felt that I gained experience in many different areas such IT adminstration, basic penetration testing, SOC environment, etc. I also felt that I became better in researching and troubleshooting when an issues had arised. Especially with the xfreerdp issue, I felt that I put many hours into finding the solution. Even though I determined the best solution was to just use another tool, I was proud of myself of not giving up right away. Like I said before, this lab was really fun and I learned many skills that I can take with me as I progress further with my cybersecurity journey.
-
 ## Issues that I faced
 
 As mentioned earlier, I initally wanted to use Crowbar to perform my brute force attack. However, when I tried to run the attack, the tool said it couldn't find xfreerdp. 
@@ -248,6 +247,10 @@ After hours after researching and troubleshooting, I found that Kali had removed
 Another issue I face was a lag in Splunk. It took some time between performing the brute force attack and seeing the results in Splunk. I then realized I didn't give the Ubuntu server enough memory to contain all searching and reporting data, so once I gave it more memory, Splunk worked perfectly.
 
 ![ss19](https://github.com/user-attachments/assets/aeb8326b-8a02-4df0-9484-d32df9bac79e)
+
+## Conclusion
+
+Overall, I had a lot fun with this lab. I felt that I gained experience in many different areas such IT adminstration, basic penetration testing, SOC environment, etc. I also felt that I became better in researching and troubleshooting when an issues had arised. Especially with the xfreerdp issue, I felt that I put many hours into finding the solution. Even though I determined the best solution was to just use another tool, I was proud of myself of not giving up right away. Like I said before, this lab was really fun and I learned many skills that I can take with me as I progress further with my cybersecurity journey.
 
 ## Notes
 [notes.docx](https://github.com/user-attachments/files/20738369/notes.docx)
