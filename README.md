@@ -235,6 +235,8 @@ After looking through Splunk, I found that a new user called NewLocalUser was cr
 
 ## Conclusion
 
+Overall, I had a lot fun with this lab. I felt that I gained experience in many different areas such IT adminstration, basic penetration testing, SOC environment, etc. I also felt that I became better in researching and troubleshooting when an issues had arised. Especially with the xfreerdp issue, I felt that I put many hours into finding the solution. Even though I determined the best solution was to just use another tool, I was proud of myself of not giving up right away. Like I said before, this lab was really fun and I learned many skills that I can take with me as I progress further with my cybersecurity journey.
+
 ## Issues that I faced
 
 As mentioned earlier, I initally wanted to use Crowbar to perform my brute force attack. However, when I tried to run the attack, the tool said it couldn't find xfreerdp. 
