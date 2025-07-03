@@ -2,25 +2,32 @@
 
 ## Objective
 
-The goal of this project is to create a virtual lab environment that has a Ubuntu server hosting splunk, a Windows Server 2022 machine that has Active Directory and is a Domain Controller, as well as a Windows 10 machine acting as the target machine and Kali Linux acting as the attacking machine. From there, my objective was to see what I could do to generate telemetry that can then be viewed on Splunk.
+The objective of this project was to create a virtual lab environment simulating a real-world enterprise network. The lab consists of:
+
+ - A Ubuntu server hosting Splunk for log analysis
+ - A Windows Server 2022 machine configured with Active Directory as a Domain Controller
+ - A Windows 10 machine serving as the target endpoint
+ - A Kali Linux machine acting as the attacker system
+
+The main goal was to generate and observe telemetry data from various attack techniques, which could then be collected and analyzed in Splunk.
 
 ## Network Diagram
 ![Network Diagram](https://github.com/user-attachments/assets/05890264-289a-4bee-aedc-ae67b85a7612)
 
 ### Key Skills Learned
 
-- IT Administration by creating users, groups and OU's in Active Directory.
-- Basic Penetration Testing by performing brute force attacks on Kali Linux.
-- Utilizing SIEMs (Splunk) for analyzing logs.
-- Became familiar with the MITRE ATT&CK framework by utilizing Atomic Red Team.
-- Gained more experienced with Linux Terminal and Windows Powershell.
+- Practiced IT administration by creating users, groups, and organizational units (OUs) in Active Directory.
+- Performed basic penetration testing using brute-force techniques on Kali Linux.
+- Analyzed security logs and telemetry using Splunk as a SIEM platform.
+- Applied the MITRE ATT&CK framework in a hands-on environment using Atomic Red Team.
+- Gained experience with both the Linux terminal and Windows PowerShell for administrative and offensive tasks..
 
 ### Tools Used
 
-- Splunk for log ingestion and analyzing the telemetry generated.
-- Active Directory for creating users, groups, and OU's.
-- Hydra for performing brute force attacks on Target Machine.
-- Atomic Red Team for using the MITRE ATT&CK framwework to generate additional Telemetry that could be analyzed on Splunk.
+- Splunk – For ingesting and analyzing telemetry data from various sources.
+- Active Directory – For user, group, and OU management in a centralized domain environment.
+- Hydra – To perform brute-force attacks against login services on the target machine.
+- Atomic Red Team – To simulate adversary behavior aligned with the MITRE ATT&CK framework and generate relevant telemetry for analysis.
 
 ## Steps
 
