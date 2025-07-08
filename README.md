@@ -1,5 +1,4 @@
-# Active Directory Lab
-
+🏢 Active Directory Lab
 ## Objective
 
 The objective of this project was to create a virtual lab environment simulating a real-world enterprise network. The lab consists of:
