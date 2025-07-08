@@ -265,8 +265,9 @@ This lab gave me hands-on experience in:
  - Collecting and analyzing endpoint telemetry with Splunk
  - Troubleshooting tool failures and adapting methodologies
  - Working across multiple operating systems in a controlled lab environment
+
 It significantly enhanced my understanding of how domain networks function, and how attacks can be detected through logging and analysis.
 
-##📎 Notes
+## 📎 Notes
 [notes.docx](https://github.com/user-attachments/files/20738369/notes.docx)
 
