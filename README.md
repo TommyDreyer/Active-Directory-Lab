@@ -1,19 +1,14 @@
-🏢 Active Directory Lab
-## Objective
+# 🏢 Active Directory Lab
 
-The objective of this project was to create a virtual lab environment simulating a real-world enterprise network. The lab consists of:
+## 📌 Overview
+This lab simulates a real-world enterprise network designed to test Active Directory administration and basic offensive techniques. It integrates Windows Server 2022 (Domain Controller), Windows 10 (Target), Kali Linux (Attacker), and Ubuntu (Splunk SIEM) to demonstrate telemetry generation, collection, and analysis during an attack scenario such as brute-force or user creation using Atomic Red Team.
 
- - A Ubuntu server hosting Splunk for log analysis
- - A Windows Server 2022 machine configured with Active Directory as a Domain Controller
- - A Windows 10 machine serving as the target endpoint
- - A Kali Linux machine acting as the attacker system
 
-The main goal was to generate and observe telemetry data from various attack techniques, which could then be collected and analyzed in Splunk.
-
-## Network Diagram
+## 🖼️ Network Diagram
 ![Network Diagram](https://github.com/user-attachments/assets/05890264-289a-4bee-aedc-ae67b85a7612)
 
-### Key Skills Learned
+
+## 🧠 Key Skills Learned
 
 - Practiced IT administration by creating users, groups, and organizational units (OUs) in Active Directory.
 - Performed basic penetration testing using brute-force techniques on Kali Linux.
@@ -21,14 +16,22 @@ The main goal was to generate and observe telemetry data from various attack tec
 - Applied the MITRE ATT&CK framework in a hands-on environment using Atomic Red Team.
 - Gained experience with both the Linux terminal and Windows PowerShell for administrative and offensive tasks..
 
-### Tools Used
 
-- Splunk – For ingesting and analyzing telemetry data from various sources.
-- Active Directory – For user, group, and OU management in a centralized domain environment.
-- Hydra – To perform brute-force attacks against login services on the target machine.
-- Atomic Red Team – To simulate adversary behavior aligned with the MITRE ATT&CK framework and generate relevant telemetry for analysis.
+## 🧰 Tools Used
 
-## Steps
+| Tool                 | Purpose                                                                 |
+| ---------------------| ----------------------------------------------------------------------- |
+| **Splunk**           | SIEM platform for collecting and analyzing telemetry from endpoints     |
+| **Active Directory** | Centralized domain management, including users, groups, and OUs         |
+| **Hydra**            | Performed brute-force attacks against RDP login services                |
+| **Atomic Red Team**  | Simulated MITRE ATT&CK-aligned adversary behavior                       |
+| **Sysmon**           | Provided process creation and system event telemetry on Windows systems |
+| **Virtualbox**       | Hosted the virtual lab environment with NAT networking and shared files |
+
+
+## 🛠️ Lab Setup
+
+### 🔧 Virtual Machines
 
 The first step was to create the virtual machines I would be using in this lab. I already had Virtual Box on my host machine so I downloaded the iso files I needed.
 
@@ -242,7 +245,7 @@ After looking through Splunk, I found that a new user called NewLocalUser was cr
 
 ![ss17](https://github.com/user-attachments/assets/2aad6042-5327-4a4d-a598-41c997276e08)
 
-## Issues that I faced
+## 🧩 Issues Encountered & Solutions
 
 As mentioned earlier, I initally wanted to use Crowbar to perform my brute force attack. However, when I tried to run the attack, the tool said it couldn't find xfreerdp. 
 
@@ -254,10 +257,16 @@ Another issue I face was a lag in Splunk. It took some time between performing t
 
 ![ss19](https://github.com/user-attachments/assets/aeb8326b-8a02-4df0-9484-d32df9bac79e)
 
-## Conclusion
+## ✅ Conclusion
 
-Overall, I had a lot fun with this lab. I felt that I gained experience in many different areas such IT adminstration, basic penetration testing, SOC environment, etc. I also felt that I became better in researching and troubleshooting when an issues had arised. Especially with the xfreerdp issue, I felt that I put many hours into finding the solution. Even though I determined the best solution was to just use another tool, I was proud of myself of not giving up right away. Like I said before, this lab was really fun and I learned many skills that I can take with me as I progress further with my cybersecurity journey.
+This lab gave me hands-on experience in:
+ - Deploying and managing an Active Directory domain
+ - Simulating adversary behavior with common red-team tools
+ - Collecting and analyzing endpoint telemetry with Splunk
+ - Troubleshooting tool failures and adapting methodologies
+ - Working across multiple operating systems in a controlled lab environment
+It significantly enhanced my understanding of how domain networks function, and how attacks can be detected through logging and analysis.
 
-## Notes
+##📎 Notes
 [notes.docx](https://github.com/user-attachments/files/20738369/notes.docx)
 
